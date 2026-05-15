@@ -11,4 +11,13 @@ public class Calculadora {
         System.out.println("La suma es: " + suma);
         scanner.close();
     }
+    public static int multiplicar(int a, int b) {
+        return a * b;
+    }
+    public static double dividir(double a, double b) {
+        if (b == 0) {
+            throw new IllegalArgumentException("No se puede dividir por cero.");
+        }
+        return a / b;
+    }
 }
